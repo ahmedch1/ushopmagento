@@ -1,6 +1,5 @@
 # ushopmagento
-Ushopmagento
-.
+Ushopmagento.
 Tutorial Link :
 https://www.udemy.com/course/simplified-magento-2-video-course-from-beginner-to-expert
 
