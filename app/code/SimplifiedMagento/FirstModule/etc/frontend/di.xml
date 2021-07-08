@@ -18,4 +18,10 @@
             </argument>
         </arguments>
     </type>
+    <type name="SimplifiedMagento\FirstModule\Model\Student">
+        <arguments>
+            <argument name="name" xsi:type="string">Bob</argument>
+            <argument name="age" xsi:type="number">35</argument>
+        </arguments>
+    </type>
 </config>
