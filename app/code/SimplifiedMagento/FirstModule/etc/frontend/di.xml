@@ -13,10 +13,16 @@
     <preference for="SimplifiedMagento\FirstModule\Api\Brightness"
                 type="SimplifiedMagento\FirstModule\Model\Medium"/>
 
-    <type name="Magento\Catalog\Model\Product">
-        <plugin name="before_set_name"
+    <type name="SimplifiedMagento\FirstModule\Controller\Page\HelloWorld">
+        <plugin name="plugin_on_execute"
                 type="SimplifiedMagento\FirstModule\Plugin\PluginSolution"
                 sortOrder="10"/>
+        <plugin name="plugin2_on_execute"
+                type="SimplifiedMagento\FirstModule\Plugin\PluginSolution2"
+                sortOrder="20"/>
+        <plugin name="plugin3_on_execute"
+                type="SimplifiedMagento\FirstModule\Plugin\PluginSolution3"
+                sortOrder="30"/>
     </type>
 
     <virtualType name="virtualType" type="SimplifiedMagento\FirstModule\Model\Yellow">

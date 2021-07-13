@@ -26,16 +26,19 @@ class HelloWorld extends \Magento\Framework\App\Action\Action
         $this->pencilFactory = $pencilFactory;
         $this->pencilInterface = $pencilInterface;
         $this->paymentTokenManagement = $paymentTokenManagement;
-        $this->productFactory=$productFactory;
+        $this->productFactory = $productFactory;
         parent::__construct($context);
     }
 
     public function execute()
-    {
-        $product=$this->productFactory->create()->load(1);
-        $product->setName("Iphone 6");
-        $productName=$product->getName();
-        echo $productName;
+   {
+
+//        $product = $this->productFactory->create()->load(1);
+//        $product->setName("Iphone 6");
+//        $productName = $product->getIdBySku("A00001");
+//        echo $productName;
+//
+        echo "Main function <br/>";
     }
 }
 
