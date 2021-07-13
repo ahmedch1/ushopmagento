@@ -23,6 +23,10 @@
         <plugin name="plugin3_on_execute"
                 type="SimplifiedMagento\FirstModule\Plugin\PluginSolution3"
                 sortOrder="30" disabled="true"/>
+        <arguments>
+            <argument name="heavyService" xsi:type="object">SimplifiedMagento\FirstModule\Model\HeavyService\Proxy
+            </argument>
+        </arguments>
     </type>
 
     <virtualType name="virtualType" type="SimplifiedMagento\FirstModule\Model\Yellow">
@@ -30,6 +34,7 @@
             <argument name="brightness" xsi:type="object">SimplifiedMagento\FirstModule\Model\High</argument>
         </arguments>
     </virtualType>
+
 
     <type name="SimplifiedMagento\FirstModule\Model\Pencil">
         <arguments>
