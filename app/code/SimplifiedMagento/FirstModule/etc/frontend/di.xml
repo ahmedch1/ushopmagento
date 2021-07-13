@@ -13,6 +13,12 @@
     <preference for="SimplifiedMagento\FirstModule\Api\Brightness"
                 type="SimplifiedMagento\FirstModule\Model\Medium"/>
 
+    <type name="Magento\Catalog\Model\Product">
+        <plugin name="before_set_name"
+                type="SimplifiedMagento\FirstModule\Plugin\PluginSolution"
+                sortOrder="10"/>
+    </type>
+
     <virtualType name="virtualType" type="SimplifiedMagento\FirstModule\Model\Yellow">
         <arguments>
             <argument name="brightness" xsi:type="object">SimplifiedMagento\FirstModule\Model\High</argument>
