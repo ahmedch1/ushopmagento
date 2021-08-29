@@ -9,7 +9,7 @@ class CustomNoRouteHandler implements NoRouteHandlerInterface
 
     public function process(RequestInterface $request)
     {
-        $request->setRouteName('noroutefound')->setControllerName('page')->setActionName('customnoroute');
+        $request->setModuleName('noroutefound')->setControllerName('page')->setActionName('customnoroute');
 
         return true;
     }
